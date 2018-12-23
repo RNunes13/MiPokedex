@@ -3,6 +3,7 @@ export default {
     this.fontsLoad();
     this.setGlobals();
     this.setLazy();
+    this.closeMenus();
   },
 
   fontsLoad() {
@@ -29,6 +30,7 @@ export default {
     MiPokedex.html = document.querySelector("html");
     MiPokedex.body = document.querySelector("body");
     MiPokedex.header = document.querySelector(".js--header");
+    MiPokedex.navbar = document.querySelector(".js--navbar");
     MiPokedex.footer = document.querySelector(".js--footer");
     MiPokedex.overlay = document.querySelector(".js--overlay");
 
@@ -52,5 +54,16 @@ export default {
         document.querySelector(_this).clasList.remove("has--placeloader");
       }
     });
+  },
+
+  closeMenus() {
+    MiPokedex.closeMenus = (removeOverlay = false) => {
+
+      if (removeOverlay) {
+        MiPokedex.overlay.classList.remove('is--active');
+        MiPokedex.navbar.classList.remove('is--active');
+        MiPokedex.body.classList.remove('has--no-scroll');
+      }
+    };
   }
 };

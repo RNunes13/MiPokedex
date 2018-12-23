@@ -1,0 +1,25 @@
+
+/**
+ * General Variables
+ * Call on every SASS files
+ */
+
+// Colors
+$color-body-text: $color-black;
+$color-body-bg: $color-white;
+
+// Containers
+$container-width: 1400px;
+
+// Header
+$mobile-header-height: 70px;
+$desktop-header-height: 82px;
+
+// Material
+$standard-ease                : cubic-bezier(0.4, 0.0, 0.2, 1);
+$accelerate-ease              : cubic-bezier(0.4, 0.0, 1, 1);
+$decelerate-ease              : cubic-bezier(0.0, 0.0, 0.2, 1);
+
+//Custom easing
+$InOutBack-ease : cubic-bezier(0.680, -0.550, 0.265, 1.550);
+

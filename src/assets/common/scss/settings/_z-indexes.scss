@@ -1,0 +1,25 @@
+
+/**
+ * Register all z-indexes values
+ * Desc order (...5003, 5002, 5001)
+ */
+$z-indexes: (
+    'age-gate',
+    'footer-terms',
+    'slide-img-arrow',
+    'slide-img-ghost-arrow',
+
+    // Common z-indexes
+    'ajax-loader',
+    'off-canvas',
+    
+    
+    // Popup Post
+    'popup-post',
+
+    // Default Overlay
+    'overlay',
+    
+    'category-filter',
+    'mobile-menu',
+);

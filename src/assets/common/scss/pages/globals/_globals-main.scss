@@ -1,0 +1,28 @@
+
+body {
+    &.has--no-scroll {
+        height: 100%;
+        overflow: hidden;
+
+        @include mq('sm') {
+            @include rem(margin-right, 17px);
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-left: 1px solid whitesmoke;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #e4e4e4;
+      transition: background 225ms $standard-ease;
+
+        &:hover {
+            background: #5a5a5a;
+        }
+    }
+}

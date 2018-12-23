@@ -1,0 +1,41 @@
+.mi-navbar {
+  @include rem(width, 200px);
+  position: fixed;
+  height: 100vh;
+  background-color: $color-white;
+  transform: translateX(-105%);
+  transition: .3s $decelerate-ease;
+  will-change: transform;
+  z-index: z('navbar');
+
+  &.is--active {
+    transform: translateX(0);
+  }
+
+  &__heading {
+    @include rem(padding, 20px 0);
+    @include rem(font-size, 20px);
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+  }
+
+  &__items {
+    @include rem(padding, 20px 0);
+  }
+
+  &__item {
+    @include rem(margin-bottom, 5px);
+    transition: .2s $standard-ease;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+
+  &__link {
+    @include rem(padding, 12px 15px);
+    @include rem(font-size, 14px);
+    @include font-weight(bold);
+    display: block;
+  }
+}

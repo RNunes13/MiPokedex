@@ -25,4 +25,8 @@ body {
             background: #5a5a5a;
         }
     }
+
+    main {
+      margin-top: $desktop-header-height;
+    }
 }

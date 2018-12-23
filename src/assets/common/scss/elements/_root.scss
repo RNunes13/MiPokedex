@@ -8,12 +8,19 @@ html {
 
 body {
   background-color: $color-body-bg;
-  min-height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @include mq('sm') {
+    min-height: calc(100% - 60px);
+  }
+  @include mq('sm', max) {
+    min-height: calc(100% - 55px);
+  }
+
   /**
      * iOS Hack
      * Needs 'viewport-fit=cover' on meta Viewport

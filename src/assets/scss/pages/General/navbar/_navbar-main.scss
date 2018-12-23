@@ -1,6 +1,7 @@
 .mi-navbar {
   @include rem(width, 200px);
   position: fixed;
+  top: 0;
   height: 100vh;
   background-color: $color-white;
   transform: translateX(-105%);

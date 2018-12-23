@@ -1,3 +1,6 @@
 
 .mi-home {
+  &__container {
+    @include rem(padding, 20px 30px);
+  }
 }

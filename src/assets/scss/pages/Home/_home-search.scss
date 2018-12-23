@@ -1,0 +1,47 @@
+.mi-home {
+  &__search {
+    @include rem(margin-top, 15px);
+    @include rem(height, 40px);
+
+    &--wrap,
+    &--input {
+      height: 100%;
+    }
+
+    &--wrap {
+      position: relative;
+    }
+
+    &--input {
+      width: calc(100% - 25px);
+
+      &:focus {
+        & + div {
+          border-bottom: 2px solid $color-primary;
+          
+          &::after {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    &--underline {
+      border-bottom: 1px solid rgba($color-black, .4);
+      transition: border-bottom-color .5s $standard-ease;
+
+      &::after {
+        @extend %iconfont;
+        @include font-weight(bold);
+        content: '\EA02';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 20px;
+        color: rgba($color-black, .4);
+        transition: .5s $standard-ease;
+      }
+    }
+  }
+}

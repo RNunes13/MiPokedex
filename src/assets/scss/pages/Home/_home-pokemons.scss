@@ -1,0 +1,5 @@
+.mi-home {
+  &__pokemons {
+    @include rem(margin-top, 30px);
+  }
+}

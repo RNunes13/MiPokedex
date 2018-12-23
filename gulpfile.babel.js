@@ -12,7 +12,7 @@ const DIST          = Taskerify.config.distPath;
 
 const storeName   = "mi-pokedex";
 const commomFiles = ["globals"];
-const otherFiles  = ["home"];
+const otherFiles  = ["home", "general"];
 
 Taskerify(mix => {
   // PugJS Template / Params -> srcFolder, distFolder, options

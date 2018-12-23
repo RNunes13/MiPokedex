@@ -1,0 +1,36 @@
+.mi-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $desktop-header-height;
+  background-color: $color-primary;
+
+  &__menu {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--icon {
+      @include rem(height, 30px);
+      @include rem(width, 30px);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: .2s $standard-ease;
+
+      &:hover {
+        background-color: rgba($color-black, .3);
+      }
+
+      &::before {
+        @extend %iconfont;
+        content: '\EA01';
+        color: $color-white;
+      }
+    }
+  }
+}

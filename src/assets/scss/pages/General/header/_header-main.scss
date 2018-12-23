@@ -5,6 +5,7 @@
   width: 100%;
   height: $desktop-header-height;
   background-color: $color-primary;
+  z-index: z('header');
 
   &__menu {
     position: absolute;
